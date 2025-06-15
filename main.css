@@ -1,0 +1,233 @@
+*{
+    box-sizing: border-box;
+    color: #fff;
+}
+body{
+    width: 100vw;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+li{
+    /* list-style: none; */
+}
+a{
+    text-decoration: none;
+    outline: none;
+}
+.container{
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 100%;
+    /* background-color: red; */
+}
+.clear{
+    clear: both;
+}
+/* start nav */
+nav{
+    padding: 10px 0;
+    background-color: #3e3e3e;
+    height: 113px;
+    border-bottom: 1px solid #fff;
+}
+nav .container{
+    overflow: hidden;
+}
+nav .container .logo{
+    float: left;
+}
+nav .container .logo img{
+    width: 120px;
+}
+nav .container .links{
+    float: right;
+    margin-top: 30px;
+}
+nav .container .links ul{
+    margin: 0;
+}
+nav .container .links ul li{
+    display: inline-block;
+    font-size: 2vw;
+    font-weight: bold;
+}
+nav .container .links ul li a{
+/* color: #fff; */
+}
+nav .container .links ul li:not(:last-child){
+    margin-right: 20px;
+}
+/* end nav */
+/* strat landing */
+section.landing{
+    height: calc(100vh - 113px);
+    background-color: #3e3e3e;
+}
+section .container .info{
+    width: fit-content;
+    margin: auto;
+    padding-top: 15vw;
+}
+section .container .info :where(h1, p){
+    /* color: #fff; */
+    text-align: center;
+}
+/* end landing */
+/* start about */
+section.about{
+    background-color: #73281a;
+    padding: 20px 0;
+}
+section.about .text{
+    display: inline-block;
+    width: 40%;
+    /* color: #fff; */
+    margin-right: 80px;
+}
+section.about .text h1{
+    font-size: 50px;
+}
+section.about .text :where(h1, p:first-of-type){
+    text-align: center;
+}
+section.about .text p{
+    line-height: 2;
+    word-spacing: 8px;
+}
+section.about .text p span{
+    background-color: #ff894f;
+    color: black;
+    padding: 5px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+section.about .image{
+    width: 50%;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    margin-top: 20px;
+}
+section.about .image img{
+    width: 100%;
+}
+/* end about */
+/* start menue */
+section.menue{
+    background-color: #3e3e3e;
+    padding: 20px 0;
+}
+section.menue  .container > h1{
+    text-align: center;
+    /* color: #fff; */
+    font-size: 50px;
+}
+section.menue  .container .items{
+    overflow: hidden;
+}
+section.menue  .container .item{
+    width: 50%;
+    padding: 20px;
+    /* color: #fff; */
+    float: left;
+}
+section.menue .container .items .item img{
+    width: 100%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+section.menue .container .items .item h2{
+    text-align: center;
+}
+section.menue .container .items .item ul{
+    list-style: disc;
+}
+section.menue .container .items .item ul li{
+    list-style: square;
+    margin-right: 20px;
+    font-size: 20px;
+    float: left;
+    list-style-position: inside;
+}
+/* end menue */
+/* start form  */
+section.form{
+    padding: 20px 0;
+    background-color: #73281a;
+}
+section.form h1{
+    text-align: center;
+    font-size: 50px;
+}
+section.form  form{
+    width: 50vw;
+    margin: auto;
+}
+section.form input{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 30px 0 ;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    color: initial;
+}
+section.form input#message{
+    height: 250px;
+}
+section.form input[type="submit"]{
+    background-color: transparent;
+    font-weight: bold;
+    font-size: 24px;
+    color: #fff;
+    border: 2px solid currentcolor;
+}
+/* end form  */
+footer{
+    background-color:#3e3e3e;
+    text-align: center;
+    padding: 20px 0;
+    letter-spacing: 2px;
+}
+@media (max-width:1100px) {
+    section.about .text{
+        width: 100%;
+        margin-right: 0;
+    }
+    section.about .image{
+        width: 100%;
+    }
+    section.menue  .container .item{
+        width: 100%;
+    }
+    nav .container .links ul li{
+        font-size: 3vw;
+    }
+}
+@media (max-width:650px) {
+    nav .container .logo img{
+        width: 100px;
+    }
+    .container{
+        padding-right:20px ;
+        padding-left: 20px;
+    }
+}
